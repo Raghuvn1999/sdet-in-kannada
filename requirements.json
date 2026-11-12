@@ -1,0 +1,45 @@
+{
+  "project": "SDET in Kannada learning website",
+  "reference": "SDET in Kannada – Learn Test Automation in Kannada.html",
+  "acceptanceCriteria": [
+    {
+      "id": "SDET-KN-001",
+      "criterion": "The landing page introduces the Kannada SDET learning site and links to its courses, interview section, jobs, and community.",
+      "verification": "Open index.html and follow each navigation link."
+    },
+    {
+      "id": "SDET-KN-002",
+      "criterion": "Visitors can browse six courses, search course names and lesson text, filter by level and status, expand lessons, star courses, and mark lessons complete.",
+      "verification": "Use the course search, filters, star buttons, and lesson checkboxes."
+    },
+    {
+      "id": "SDET-KN-003",
+      "criterion": "Course progress and starred courses persist in the browser on the same device.",
+      "verification": "Change course progress, reload the page, and confirm the state remains."
+    },
+    {
+      "id": "SDET-KN-004",
+      "criterion": "Visitors can search interview questions and filter them by topic.",
+      "verification": "Search and select each interview topic filter."
+    },
+    {
+      "id": "SDET-KN-005",
+      "criterion": "The site supports Kannada and English interface content and light/dark themes.",
+      "verification": "Use the language and theme controls."
+    },
+    {
+      "id": "SDET-KN-006",
+      "criterion": "The page is responsive and usable on mobile and desktop.",
+      "verification": "Review the page at narrow and wide viewport sizes."
+    }
+  ],
+  "implementation": {
+    "type": "static single-page website",
+    "entryPoint": "index.html",
+    "persistence": "Browser localStorage",
+    "backendRequired": false
+  },
+  "openQuestions": [
+    "Replace placeholder Instagram and YouTube profile URLs with the owner's actual channels if desired."
+  ]
+}
