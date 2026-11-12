@@ -1,4 +1,4 @@
-const CACHE_NAME = "sdet-kannada-v5";
+const CACHE_NAME = "sdet-kannada-v6";
 const APP_SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
