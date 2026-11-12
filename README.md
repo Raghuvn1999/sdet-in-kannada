@@ -15,6 +15,8 @@ Visit the live site: <https://raghuvn1999.github.io/sdet-in-kannada/>
 - SDET and automation job links
 - Light and dark themes
 - Responsive layout for desktop and mobile
+- Resume the next unfinished course from the course dashboard
+- Installable progressive web app with offline app-shell support on compatible browsers
 
 Progress and favourites are saved in the browser on the visitor's device using `localStorage`.
 
@@ -28,4 +30,4 @@ Open `index.html` in a web browser. The site is static and does not require a se
 
 ## Hosting
 
-The site is hosted for free with GitHub Pages from the `main` branch.
+The site is hosted for free with GitHub Pages from the `main` branch. The PWA manifest, service worker, and app icon are in the project root.

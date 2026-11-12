@@ -31,11 +31,17 @@
       "id": "SDET-KN-006",
       "criterion": "The page is responsive and usable on mobile and desktop.",
       "verification": "Review the page at narrow and wide viewport sizes."
+    },
+    {
+      "id": "SDET-KN-007",
+      "criterion": "A learner can resume the next unfinished course, and the site offers install/offline support where the browser supports progressive web apps.",
+      "verification": "Use the resume control; install the app in a compatible browser and reopen it offline after first load."
     }
   ],
   "implementation": {
     "type": "static single-page website",
     "entryPoint": "index.html",
+    "pwa": ["manifest.webmanifest", "sw.js", "icon.svg"],
     "persistence": "Browser localStorage",
     "backendRequired": false
   },

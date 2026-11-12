@@ -1,0 +1,19 @@
+{
+  "name": "SDET in Kannada",
+  "short_name": "SDET Kannada",
+  "description": "Learn software testing and test automation in Kannada.",
+  "lang": "kn-IN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#e8590c",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
