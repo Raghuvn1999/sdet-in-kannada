@@ -48,7 +48,7 @@ h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--acc
 .btn.alt{background:transparent;color:var(--text);border:1px solid var(--border)}
 .btn.sm{padding:7px 14px;font-size:.85rem;margin:12px 0 0}
 .banner{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:52px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px 26px}
-.banner .map{width:90px;height:140px;flex:none}.flag{width:130px;height:auto;flex:none}
+.banner .map{width:90px;height:140px;flex:none}.flag{width:130px;height:auto;flex:none;filter:drop-shadow(0 8px 16px rgba(0,0,0,.24));transition:transform .25s ease,filter .25s ease}.banner:hover .flag{filter:drop-shadow(0 12px 20px rgba(0,0,0,.32));transform:translateY(-2px)}
 .banner b{display:block;font-size:1.6rem;letter-spacing:-.02em}.banner span{color:var(--muted)}
 .wave{transform-box:fill-box;transform-origin:left center;animation:wv 3s ease-in-out infinite alternate}
 @keyframes wv{to{transform:skewY(-2.5deg) scaleX(.97)}}
@@ -129,7 +129,7 @@ header.nav::before{background:linear-gradient(#ffd700 50%,#e8112d 50%)}
 @keyframes city-ping{from{transform:scale(1);opacity:.9}to{transform:scale(3.4);opacity:0}}
 .pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.2);color:var(--accent);font-family:"Noto Sans Kannada",sans-serif;font-weight:600}
 h1 em{background:linear-gradient(90deg,#ffe24d,#ffb000);-webkit-background-clip:text;background-clip:text;color:transparent}
-.btn{box-shadow:0 8px 24px rgba(255,215,0,.12)}.btn.alt{background:rgba(127,127,127,.08);box-shadow:none}
+.btn{box-shadow:0 8px 24px rgba(255,215,0,.12)}.btn.alt{background:rgba(127,127,127,.08);box-shadow:none}.btn[hidden]{display:none!important}#installApp{align-items:center;gap:9px;border-color:rgba(255,215,0,.28);background:linear-gradient(135deg,rgba(255,215,0,.13),rgba(232,17,45,.08));box-shadow:0 8px 24px rgba(255,215,0,.08);transition:transform .2s,border-color .2s,background .2s,box-shadow .2s}#installApp svg{height:17px;width:17px;color:var(--accent);flex:none}#installApp:hover{border-color:rgba(255,215,0,.55);background:linear-gradient(135deg,rgba(255,215,0,.2),rgba(232,17,45,.12));box-shadow:0 10px 26px rgba(255,215,0,.13);transform:translateY(-2px)}
 .cc,.card,.stat,.banner,details{background:linear-gradient(180deg,rgba(127,127,127,.07),rgba(127,127,127,.025)),var(--surface)}
 .cc{padding:0;overflow:hidden}.cb{padding:18px 20px 20px}.th{position:relative;aspect-ratio:16/9;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,rgba(255,215,0,.16),transparent 55%),linear-gradient(315deg,rgba(232,17,45,.18),transparent 55%),#121212}.th svg{position:absolute;inset:0;width:100%;height:100%;display:block}.th .lv{position:absolute;left:14px;top:14px;background:rgba(0,0,0,.55);color:#ffd700;border-radius:99px;padding:3px 11px;box-shadow:inset 0 0 0 1px rgba(255,215,0,.4)}.cc .st{width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;top:10px;right:10px;z-index:3}
 .cc h3{font-size:1.12rem}
@@ -183,7 +183,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:26px 0 40px;po
 <span class="pill"><i class="fl"></i>ನಮ್ಮ ಭಾಷೆಯಲ್ಲಿ ತಂತ್ರಜ್ಞಾನ</span>
 <h1 data-kn="ಕನ್ನಡದಲ್ಲಿ <em>SDET</em> ಕಲಿಯಿರಿ">Learn SDET<br>in <em>Kannada.</em></h1>
 <p class="lead" data-kn="ಸರಳ ಕನ್ನಡದಲ್ಲಿ ಟೆಸ್ಟ್ ಆಟೊಮೇಷನ್, ಕೋಡಿಂಗ್ ಮತ್ತು ಸಂದರ್ಶನ ತಯಾರಿ. ಫ್ರೆಷರ್‌ಗಳು ಮತ್ತು ಮ್ಯಾನುಯಲ್ ಟೆಸ್ಟರ್‌ಗಳಿಗಾಗಿ.">Practical test automation, coding and interview prep explained simply in Kannada. Built for freshers, manual testers and career switchers.</p>
-<a class="btn" href="#courses" data-kn="ಕೋರ್ಸ್‌ಗಳನ್ನು ನೋಡಿ">Explore courses</a><a class="btn alt ig" href="#" target="_blank" rel="noopener">Instagram</a><button class="btn alt" id="installApp" hidden>Install app</button>
+<a class="btn" href="#courses" data-kn="ಕೋರ್ಸ್‌ಗಳನ್ನು ನೋಡಿ">Explore courses</a><a class="btn alt ig" href="#" target="_blank" rel="noopener">Instagram</a><button class="btn alt" id="installApp" hidden><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 16v3h14v-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Install app</span></button>
 </div>
 </div>
 <div class="banner rv">
@@ -196,7 +196,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:26px 0 40px;po
 <div class="mq" aria-hidden="true"><div id="mq"></div></div>
 
 <section id="courses"><p class="eyebrow">Courses</p><h2 data-kn="ಲಭ್ಯವಿರುವ ಕೋರ್ಸ್‌ಗಳು">Available courses</h2><p class="sub">Tick lessons as you go. Your progress is saved on this device.</p>
-<div class="tools"><input id="cs" type="search" placeholder="Search courses…"><kbd>Ctrl K</kbd></div>
+<div class="tools"><input id="cs" type="search" placeholder="Search courses…"></div>
 <div class="chips" id="lv"></div>
 <div class="ov" id="ovt"></div><div class="prog"><i id="ovb"></i></div>
 <div class="lesson-start"><p id="resumeHint">Your course progress stays on this device. Start with a beginner course.</p><button class="btn sm" id="resumeBtn" type="button">Start learning</button></div>
