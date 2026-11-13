@@ -1,5 +1,16 @@
-const CACHE_NAME = "sdet-kannada-v11";
-const APP_SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
+const CACHE_NAME = "sdet-kannada-v12";
+const APP_SHELL = [
+  "./", "./index.html", "./manifest.webmanifest", "./icon.svg",
+  "./assets/course-logos/tf.svg", "./assets/course-logos/ag.svg", "./assets/course-logos/jv.svg",
+  "./assets/course-logos/py.svg", "./assets/course-logos/js.svg", "./assets/course-logos/sq.svg",
+  "./assets/course-logos/ds.svg", "./assets/course-logos/lx.svg", "./assets/course-logos/se.svg",
+  "./assets/course-logos/pw.svg", "./assets/course-logos/cy.svg", "./assets/course-logos/cb.svg",
+  "./assets/course-logos/ap.svg", "./assets/course-logos/ra.svg", "./assets/course-logos/tn.svg",
+  "./assets/course-logos/ju.svg", "./assets/course-logos/cu.svg", "./assets/course-logos/mv.svg",
+  "./assets/course-logos/je.svg", "./assets/course-logos/gt.svg", "./assets/course-logos/dk.svg",
+  "./assets/course-logos/am.svg", "./assets/course-logos/jm.svg", "./assets/course-logos/fw.svg",
+  "./assets/course-logos/ip.svg"
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
