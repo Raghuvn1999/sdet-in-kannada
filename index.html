@@ -151,7 +151,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:26px 0 40px;po
 .fl{width:20px;height:20px;border-radius:50%;background:linear-gradient(90deg,#ffd700 50%,#e8112d 50%);box-shadow:0 0 0 1px rgba(255,255,255,.2);flex:none}
 .banner .map{display:none}
 .th .lv{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
-.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding:44px 20px;text-align:left}
+.fg{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;padding:44px 20px;text-align:left}
 .footer-columns .logo img{width:20px;height:31px;object-fit:contain;flex:none}
 .fg h4{margin:0 0 12px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.fg ul{list-style:none;margin:0;padding:0}.fg li{margin:0 0 8px}.fg a{color:var(--muted);text-decoration:none;font-size:.9rem;margin:0}.fg a:hover{color:var(--accent)}
 .soc{display:flex;gap:8px;margin-top:18px}.soc a{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--border);border-radius:12px;background:rgba(127,127,127,.06);font-weight:700;font-size:.8rem;text-decoration:none}
@@ -240,7 +240,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:26px 0 40px;po
 <footer class="footer-columns" aria-label="Explore SDET in Kannada">
 <div class="fg"><div><div class="logo"><img src="./icon.svg" alt=""><span class="lt"><span class="l1">SDET <b>in Kannada</b></span><span class="l2">ಕನ್ನಡದಲ್ಲಿ SDET</span></span></div><p class="sub">Helping Kannada-speaking students and testers become confident SDETs, in the language they think in.</p><div class="soc"><a class="ig" href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a class="yt" href="#" target="_blank" rel="noopener" aria-label="YouTube">YT</a></div></div>
 <div><h4>Explore</h4><ul><li><a href="#courses">Courses</a></li><li><a href="#jobs">Job links</a></li><li><a href="#interview">Interview questions</a></li></ul></div>
-<div><h4>Courses</h4><ul id="fc"></ul></div></div><div class="fb">Made with ❤️ in Karnataka for Kannada-speaking testers · © SDET in Kannada</div>
+</div><div class="fb">Made with ❤️ in Karnataka for Kannada-speaking testers · © SDET in Kannada</div>
 </footer>
 
 <script>
@@ -364,7 +364,6 @@ chips();render();
 document.getElementById("resumeBtn").onclick=function(){var nextCourse=C.find(function(c){return cnt(c)<c[4].length});if(!nextCourse)return;location.hash="course/"+nextCourse[0]};
 document.getElementById("s1").textContent=C.length;
 document.getElementById("s2").textContent=C.reduce(function(a,c){return a+c[4].length},0);
-document.getElementById("fc").innerHTML=C.map(function(c){return'<li><a href="#courses">'+c[2]+'</a></li>'}).join("");
 
 function courseGroups(c){
   var starts=Object.keys(c[7]).map(Number).sort(function(a,b){return a-b}),groups=[];
